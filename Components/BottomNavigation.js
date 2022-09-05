@@ -1,6 +1,5 @@
 import { AppBar, IconButton, FAB } from "@react-native-material/core";
 import Icon from "@expo/vector-icons/MaterialCommunityIcons";
-import LinearGradient from 'react-native-linear-gradient';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 export  function NavBottom(){
@@ -9,7 +8,7 @@ return (
 
 
 
-  <NavigationContainer><AppBar
+<AppBar
    
   variant="bottom"
   leading={props => (
@@ -28,7 +27,7 @@ return (
     style={{ position: "absolute", top: -28, alignSelf: "center",backgroundColor:"#CEB7B2" }}
   />
 </AppBar>
-</NavigationContainer>
+
 
 
 

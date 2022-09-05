@@ -2,12 +2,11 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,Image,SafeAreaView ,ImageBackground,ScrollView} from 'react-native';
 import { useDimensions,useDeviceOrientation } from '@react-native-community/hooks';
 import { Card, ListItem, Button, Icon } from 'react-native-elements'
-import {NavBottom} from './Components/BottomNavigation'
-import { EventCarousel } from './Components/EventCarousel';
-import { HearingLoss } from './Components/Hearing_Loss';
+import {NavBottom} from '../Components/BottomNavigation'
 
 
-export function Events_Page() {
+
+export function Events_Screen() {
 
     console.log('YOU GRONK')
     let x=1;
@@ -17,9 +16,9 @@ export function Events_Page() {
  
     <View style={styles.container}>
    
-      <ImageBackground source={require('./assets/icon/background.png')} style={{flex:1,width:"100%"}}>
+      <ImageBackground source={require('../assets/icon/background.png')} style={{flex:1,width:"100%"}}>
     <Text style={styles.H1}>National Week of Deaf People</Text>
-    <Image source={require('./assets/icon/deaf_festival.png')} style={{width:"80%",height:"20%",marginLeft:"3%",marginTop:"5%",resizeMode:'contain'}}></Image>
+    <Image source={require('../assets/icon/deaf_festival.png')} style={{width:"80%",height:"20%",marginLeft:"3%",marginTop:"5%",resizeMode:'contain'}}></Image>
     <Text style={{marginLeft:"5%",marginTop:"7%",color:"#756A6A",fontWeight:"10",fontSize:"18%"}}>Source From: Deaf Australia {'\n'}{'\n'} 30/08/2022</Text>
     <ScrollView>
     <Text style={{marginLeft:"5%",marginTop:"7%",color:"#756A6A",fontSize:"14%"}}>Introduction
